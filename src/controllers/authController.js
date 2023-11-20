@@ -1,3 +1,4 @@
+import bcrypt from 'bcrypt';
 import admin from '../config/firebase-config.js';
 import userRepository from '../repository/userRepository.js';
 
@@ -25,7 +26,7 @@ class AuthController {
       userRepository.create({
         uid: user.uid,
         email,
-        password,
+        password: await bcrypt.hash(password, 10),
         name,
         phone,
         dateOfBirth,
