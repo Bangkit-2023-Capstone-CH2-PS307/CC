@@ -42,11 +42,24 @@ class AuthController {
         },
       });
     } catch (error) {
-      // TODO : Handle FirestoreAuthError & FirestoreError
+      // TODO : Handle FirestoreError
+      let message = 'Failed to signup, please try again.';
+      switch (error.code) {
+        case 'auth/email-already-exists':
+          message = 'The email address is already in use by another account.';
+          break;
+        case 'auth/invalid-phone-number':
+          message = 'The phone format muse be +62xxxxx.';
+          break;
+        default:
+          message = 'Failed to signup, please try again.';
+      }
+
       console.log(error);
+
       return res.status(400).json({
         status: 400,
-        message: 'Failed to signup, please try again.',
+        message,
       });
     }
   }
