@@ -12,8 +12,8 @@ export default class BaseRepository {
   }
 
   async get() {
-    const snapshot = this.collection.get();
-    return snapshot.docs.map((doc) => doc.data());
+    const snapshot = await this.collection.get();
+    return snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
   }
 
   async findById(id) {
