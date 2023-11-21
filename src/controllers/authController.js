@@ -1,6 +1,7 @@
 import bcrypt from 'bcrypt';
 import admin from '../config/firebase-config.js';
 import userRepository from '../repository/userRepository.js';
+import { Timestamp } from 'firebase-admin/firestore';
 
 class AuthController {
   async signup(req, res) {
@@ -12,6 +13,8 @@ class AuthController {
         phone,
         dateOfBirth,
       } = req.body;
+      const createdAt = Timestamp.now();
+      const updatedAt = createdAt;
 
       const user = await admin.auth().createUser({
         email,
@@ -23,13 +26,15 @@ class AuthController {
       });
 
       // save to firestore
-      userRepository.create({
+      await userRepository.create({
         uid: user.uid,
         email,
         password: await bcrypt.hash(password, 10),
         name,
         phone,
         dateOfBirth,
+        createdAt,
+        updatedAt,
       });
 
       return res.status(201).json({
@@ -40,6 +45,7 @@ class AuthController {
           name: user.displayName,
           phone: user.phoneNumber,
           dateOfBirth,
+          createdAt,
         },
       });
     } catch (error) {
