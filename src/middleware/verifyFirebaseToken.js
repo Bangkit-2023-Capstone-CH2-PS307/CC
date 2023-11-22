@@ -26,11 +26,19 @@ const verifyFirebaseToken = async (req, res, next) => {
       message: 'Please log in to get access.',
     });
   } catch (error) {
-    // TODO : Handle FirebaseAuthError
     console.log(error);
-    return res.status(500).send({
-      status: 500,
-      message: 'Error',
+    let message = 'The token is invalid.';
+    switch (error.code) {
+      case 'auth/id-token-expired':
+        message = 'The token is expired.';
+        break;
+      default:
+        message = 'The token is invalid.';
+    }
+
+    return res.status(400).send({
+      status: 400,
+      message,
     });
   }
 };
