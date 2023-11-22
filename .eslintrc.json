@@ -17,6 +17,12 @@
         ]
     },
     "rules": {
-        "import/extensions": [2, {"js": "ignorePackages"}]
+        "import/extensions": [2, {"js": "ignorePackages"}],
+        "import/no-unresolved": [
+            "error",
+            {
+              "ignore": ["^firebase-admin/.+"]
+            }
+          ]
     }
 }
