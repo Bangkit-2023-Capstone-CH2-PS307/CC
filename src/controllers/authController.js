@@ -31,7 +31,7 @@ class AuthController {
         name,
         createdAt,
         updatedAt,
-      });
+      }, email);
 
       return res.status(201).json({
         status: 201,

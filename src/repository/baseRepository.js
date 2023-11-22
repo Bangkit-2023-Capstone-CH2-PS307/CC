@@ -6,8 +6,14 @@ export default class BaseRepository {
     this.collection = db().collection(collection);
   }
 
-  async create(data) {
-    const res = await this.collection.add(data);
+  async create(data, doc = null) {
+    let res;
+    if (doc) {
+      res = await this.collection.doc(doc).set(data);
+    } else {
+      res = await this.collection.add(data);
+    }
+
     return res;
   }
 
