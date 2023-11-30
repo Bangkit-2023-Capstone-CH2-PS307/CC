@@ -1,0 +1,70 @@
+{
+  "foods": {
+    "Susu": {
+      "name": "Susu",
+      "nutritions": ["Protein", "kalsium", "vitamin D", "vitamin B12", "vitamin A", "fosfor"],
+      "percentages": ["Protein 20%", "Lemak 3-4%", "Karbohidrat 5-6%", "Kalsium 28%", "Vitamin D 14%"],
+      "description": "Protein adalah salah satu nutrisi penting yang dibutuhkan oleh tubuh. Beberapa fungsi protein bagi tubuh di antaranya yaitu sebagai sumber energi dan membantu meningkatkan sistem kekebalan tubuh. Dalam artian lain, tubuh yang kekurangan protein akan rentan terserang penyakit dan infeksi."
+    },
+    "Bubur": {
+      "name": "Bubur",
+      "nutritions": ["Karbohidrat", "Protein", "Serat", "Vitamin", "Mineral", "Lemak."],
+      "percentages": ["Karbohidrat 45-50%", "Protein 9-10%", "Serat 7-10%", "Lemak 1-2%"],
+      "description": "Karbohidrat adalah zat gizi yang berfungsi sebagai sumber energi untuk tubuh. Sumber energi ini merupakan makanan utama bagi otak. Oleh sebab itu, kekurangan karbohidrat justru bisa memicu masalah kesehatan, sehingga Anda tidak bisa menghindarinya."
+    },
+    "Roti": {
+      "name": "Roti",
+      "nutritions": ["Karbohidrat", "Protein", "Serat", "Vitamin B", "Zat besi", "Fosfor"],
+      "percentages": ["Karbohidrat 20-25%", "Protein 2-3%", "Serat 1-3%", "Lemak 1-2%"],
+      "description": "Lemak adalah jenis nutrisi yang penting untuk tubuh manusia. Beberapa fungsi lemak, yaitu menjadi sumber energi dan membantu penyerapan vitamin-vitamin larut lemak"
+    },
+    "Telur": {
+      "name": "Telur",
+      "nutritions": ["Protein", "Lemak", "Vitamin A", "Vitamin D", "Vitamin B12", "Vitamin E", "Zat besi"],
+      "percentages": ["Protein 13%", "Lemak 10%", "Vitamin A 6%", "Vitamin D 10%", "Vitamin B12 31%"],
+      "description": "Kalsium merupakan mineral makro yang memiliki segudang manfaat untuk tubuh. Lantas, apa saja manfaat kalsium untuk kesehatan tubuh? Salah satu manfaat kalsium adalah menjaga kesehatan tulang dan gigi. Hal ini dikarenakan kalsium merupakan zat utama yang membentuk tulang dan gigi"
+    },
+    "Keju": {
+      "name": "Keju",
+      "nutritions": ["Protein", "Lemak", "Kalsium", "Fosfor", "Vitamin A", "Vitamin B12"],
+      "percentages": ["Protein 25-30%", "Lemak 30-35%", "Kalsium 72%", "Vitamin B12 40%"],
+      "description": "Serat pangan, dikenal juga sebagai serat diet atau dietary fiber, merupakan bagian dari tumbuhan yang dapat dikonsumsi dan tersusun dari karbohidrat yang memiliki sifat resistan terhadap proses pencernaan dan penyerapan di usus halus manusia serta mengalami fermentasi sebagian atau keseluruhan di usus besar."
+    },
+    "Yogurt": {
+      "name": "Yogurt",
+      "nutritions": ["Protein", "Lemak", "Kalsium", "Fosfor", "Vitamin B12", "Probiotik"],
+      "percentages": ["Protein 10-15%", "Lemak 0-10%", "Kalsium 15-30%", "Probiotik Tergantung pada jenis dan merek"],
+      "description": "Probiotik adalah mikroorganisme hidup, terutama bakteri atau ragi, yang memberikan manfaat kesehatan ketika dikonsumsi dalam jumlah cukup. Umumnya ditemukan dalam makanan fermentasi seperti yogurt dan kimchi, probiotik dapat meningkatkan keseimbangan mikroflora usus, mendukung sistem kekebalan, dan memperbaiki pencernaan. Konsumsi makanan yang mengandung probiotik dapat menjadi langkah penting untuk mendukung kesehatan secara keseluruhan."
+    },
+    "Kentang": {
+      "name": "Kentang",
+      "nutritions": ["Karbohidrat", "Serat", "Vitamin C", "Vitamin B6", "Potasium", "Fosfor"],
+      "percentages": ["Karbohidrat 15-20%", "Serat 2-3%", "Vitamin C 20%", "Kalium 10%"],
+      "description": "Beta karoten adalah salah satu jenis karotenoid yang merupakan zat pigmen pada sayur dan buah berwarna merah, kuning, dan oranye. Beta karoten bisa didapatkan secara alami dari sayur dan buah, bisa juga dari suplemen. Namun, beta karoten alami lebih dianjurkan karena lebih aman."
+    },
+    "Wortel": {
+      "name": "Wortel",
+      "nutritions": ["Beta-karoten (provitamin A)", "Serat", "Vitamin K", "Vitamin C", "Potasium"],
+      "percentages": ["Karbohidrat 10-15%", "Serat 2-3%", "Beta-karoten Tergantung pada ukuran dan variasi"],
+      "description": "Omega-3 merupakan asam lemak esensial atau asam lemak tak jenuh ganda yang mampu berguna dalam mengontrol tubuh sehingga terbebas dari rasa pusing, mual hingga kolesterol. Omega-3 juga sangat berguna bagi kesehatan otak yang dapat menjaga perkembangan fungsi dan sara yang pada setiap 100 gramnya terkandung kurang lebih sebanyak 1 gram asam lemak tak jenuh ganda."
+    },
+    "Agar-Agar": {
+      "name": "Agar-Agar",
+      "nutritions": ["Karbohidrat", "Serat", "Vitamin", "Mineral"],
+      "percentages": ["Karbohidrat 80-90%", "Serat 70-80%", "Mineral Tergantung pada sumber"],
+      "description": "Zat besi merupakan mineral yang berperan penting dalam pembentukan hemoglobin dalam sel darah merah. Hemoglobin sendiri adalah protein yang membawa oksigen dari paru-paru ke seluruh tubuh. Selain itu, zat besi memiliki fungsi lain yang juga penting bagi tubuh"
+    },
+    "Ikan": {
+      "name": "Ikan",
+      "nutritions": ["Lemak omega-3", "Vitamin D", "Vitamin B12", "Selenium", "Kalium"],
+      "percentages": ["Protein 18-25%", "Lemak 1-20%", "Omega-3 Tergantung pada jenis"],
+      "description": "Vitamin A adalah vitamin  yang larut dalam lemak dan memiliki beberapa bentuk aktif, termasuk retinol, retinal, retinoic acid, dan provitamin A carotenoids."
+    },
+    "Daging Cincang": {
+      "name": "Daging Cincang",
+      "nutritions": ["Protein", "Lemak", "Vitamin B12", "Zat Besi", "Zinc", "Fosfor"],
+      "percentages": ["Protein 15-20%", "Lemak 10-25%", "Zat Besi 10-15%"],
+      "description": "Vitamin D merupakan salah satu kelompok vitamin larut dalam lemak. Manfaat vitamin D bagi tubuh sangat beragam, mulai dari menjaga kepadatan tulang dan gigi, meningkatkan imun tubuh, hingga membantu mencegah penyakit kanker.  Vitamin B12  baik dikonsumsi oleh penderita anemia. Hal ini karena vitamin B12 memiliki peranan penting dalam pembentukan sel darah merah. Selain itu, vitamin ini juga dapat menjaga kesehatan sistem saraf. Vitamin B12 bisa didapatkan dengan mengonsumsi makanan laut hingga daging.  Vitamin C atau asam askorbat adalah nutrisi penting yang tubuh manusia perlukan. Ini merupakan vitamin larut air yang berperan dalam banyak fungsi biologis. Itu sebabnya, kamu perlu memenuhi kebutuhan vitamin C setiap hari"
+    }
+  }
+}
