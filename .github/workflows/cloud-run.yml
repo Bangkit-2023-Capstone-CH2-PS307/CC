@@ -5,9 +5,9 @@ on:
     branches: [ "main" ]
 
 env:
-  PROJECT_ID: ${{ secrets.PROJECT_ID }}
-  SERVICE: ${{ secrets.CLOUD_RUN_SERVICE_NAME }}
-  REGION: ${{ secrets.REGION }}
+  PROJECT_ID: bangkit-ch2-ps307
+  SERVICE: backend-api-cc
+  REGION: asia-southeast2
 
 jobs:
   deploy:
