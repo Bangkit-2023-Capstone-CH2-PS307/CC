@@ -7,7 +7,7 @@ on:
 env:
   PROJECT_ID: ${{ secrets.PROJECT_ID }}
   SERVICE: ${{ secrets.CLOUD_RUN_SERVICE_NAME }}
-  REGION: asia-southeast2
+  REGION: ${{ secrets.REGION }}
 
 jobs:
   deploy:
