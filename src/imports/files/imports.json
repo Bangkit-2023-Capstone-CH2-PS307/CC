@@ -66,5 +66,37 @@
       "percentages": ["Protein 15-20%", "Lemak 10-25%", "Zat Besi 10-15%"],
       "description": "Vitamin D merupakan salah satu kelompok vitamin larut dalam lemak. Manfaat vitamin D bagi tubuh sangat beragam, mulai dari menjaga kepadatan tulang dan gigi, meningkatkan imun tubuh, hingga membantu mencegah penyakit kanker.  Vitamin B12  baik dikonsumsi oleh penderita anemia. Hal ini karena vitamin B12 memiliki peranan penting dalam pembentukan sel darah merah. Selain itu, vitamin ini juga dapat menjaga kesehatan sistem saraf. Vitamin B12 bisa didapatkan dengan mengonsumsi makanan laut hingga daging.  Vitamin C atau asam askorbat adalah nutrisi penting yang tubuh manusia perlukan. Ini merupakan vitamin larut air yang berperan dalam banyak fungsi biologis. Itu sebabnya, kamu perlu memenuhi kebutuhan vitamin C setiap hari"
     }
-  }
+  },
+  "news": [
+    {
+      "title": "Rekomendasi Suplemen Selama Kehamilan",
+      "url": "https://ayosehat.kemkes.go.id/1000-hari-pertama-kehidupan/rekomendasi-suplemen-selama-kehamilan",
+      "image": "https://ayosehat.kemkes.go.id/__asset/__images/content/6db013b83d60f006f7ece659864166c5.png",
+      "sort": 1
+    },
+    {
+      "title": "Gizi Seimbang Ibu Hamil",
+      "url": "https://yankes.kemkes.go.id/view_artikel/405/gizi-seimbang-ibu-hamil",
+      "image": "https://yankes.kemkes.go.id/img/bg-img/gambarartikel_1658479122_213320.jpg",
+      "sort": 2
+    },
+    {
+      "title": "1000 Hari Pertama Kehidupan",
+      "url": "https://ayosehat.kemkes.go.id/1000-hari-pertama-kehidupan/home",
+      "image": "https://ayosehat.kemkes.go.id/__asset/__images/content/47908300be0800cbfd361da47766cc7d.png",
+      "sort": 3
+    },
+    {
+      "title": "Ragam Makanan untuk Ibu Hamil",
+      "url": "https://promkes.kemkes.go.id/ragam-makanan-yang-mengandung-nutrisi-penting-untuk-ibu-hamil-pk",
+      "image": "https://promkes.kemkes.go.id/imagex/content/777d1311WhatsApp_Image_2023-01-19_at_14.13.43.jpeg",
+      "sort": 4
+    },
+    {
+      "title": "Mengenal Apa Itu Stunting",
+      "url": "https://yankes.kemkes.go.id/view_artikel/1388/mengenal-apa-itu-stunting",
+      "image": "https://yankes.kemkes.go.id/img/bg-img/gambarartikel_1661498786_242330.jpg",
+      "sort": 5
+    }
+  ]
 }

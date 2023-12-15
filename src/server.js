@@ -3,6 +3,7 @@ import express from 'express';
 import morgan from 'morgan';
 import verifyFirebaseToken from './middleware/verifyFirebaseToken.js';
 import authRoutes from './routes/authRoutes.js';
+import newsRoutes from './routes/newsRoutes.js';
 
 const app = express();
 
@@ -19,5 +20,6 @@ app.get('/api/v1/', (req, res) => {
   });
 });
 app.use('/api/v1/auth', authRoutes);
+app.use('/api/v1/news', newsRoutes, verifyFirebaseToken);
 
 export default app;

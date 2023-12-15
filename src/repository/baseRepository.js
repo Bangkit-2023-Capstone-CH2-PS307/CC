@@ -18,7 +18,7 @@ export default class BaseRepository {
   }
 
   async get() {
-    const snapshot = await this.collection.get();
+    const snapshot = await this.collection.orderBy('sort').get();
     return snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
   }
 
