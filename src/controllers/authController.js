@@ -2,6 +2,7 @@ import bcrypt from 'bcrypt';
 import { Timestamp } from 'firebase-admin/firestore';
 import admin from '../config/firebase-config.js';
 import userRepository from '../repository/userRepository.js';
+import { ValidationError } from '../utils/appErrors.js';
 
 class AuthController {
   async signup(req, res) {
@@ -11,6 +12,20 @@ class AuthController {
         password,
         name,
       } = req.body;
+
+      // validation
+      if (!email) {
+        throw new ValidationError('Email is required.');
+      }
+
+      if (!password) {
+        throw new ValidationError('Password is required.');
+      }
+
+      if (!name) {
+        throw new ValidationError('Name is required.');
+      }
+
       const createdAt = Timestamp.now();
       const updatedAt = createdAt;
 
@@ -43,17 +58,22 @@ class AuthController {
         },
       });
     } catch (error) {
-      // TODO : Handle FirestoreError
       let message = 'Failed to signup, please try again.';
-      switch (error.code) {
-        case 'auth/email-already-exists':
-          message = 'The email address is already in use by another account.';
-          break;
-        case 'auth/invalid-phone-number':
-          message = 'The phone format muse be +62xxxxx.';
-          break;
-        default:
-          message = 'Failed to signup, please try again.';
+
+      if (error instanceof ValidationError) {
+        message = error.message;
+      } else {
+        // Handle FirestoreError
+        switch (error.code) {
+          case 'auth/email-already-exists':
+            message = 'The email address is already in use by another account.';
+            break;
+          case 'auth/invalid-phone-number':
+            message = 'The phone format muse be +62xxxxx.';
+            break;
+          default:
+            message = 'Failed to signup, please try again.';
+        }
       }
 
       console.log(error);
