@@ -44,7 +44,7 @@ jobs:
           --region ${{ env.REGION }} \
           --image "${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.SERVICE }}/${{ env.SERVICE }}-image:${{ github.sha }}" \
           --memory 4Gi \
-          --cpu 2 \
+          --cpu 4 \
           --max-instances 2 \
           --allow-unauthenticated
 
